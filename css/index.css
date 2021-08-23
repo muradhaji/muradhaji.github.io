@@ -1,0 +1,19 @@
+/* Sections */
+@import url(fonts.css);
+@import url(main.css);
+@import url(header.css);
+@import url(email.css);
+@import url(stores.css);
+@import url(ordercall.css);
+@import url(footer.css);
+
+:root {
+  --primary-color: #962689;
+  --primary-bg-color: #f3f3f3;
+  --text-color: #103742;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}

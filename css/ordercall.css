@@ -1,0 +1,65 @@
+.order-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/flower.svg);
+  background-repeat: no-repeat;
+  background-position: right 36%;
+  height: 400px;
+}
+
+.order-call > .holder {
+  margin: 60px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 830px;
+}
+
+.order-call > .holder > .text {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.order-call > .holder > .number {
+  font-size: 24px;
+  margin: 0 30px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.order-call > .holder > .number-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-call > .holder > .number-form > input {
+  width: auto;
+  font-size: 14px;
+  outline: white;
+  border: none;
+  height: 40px;
+  width: 320px;
+}
+
+.order-call > .holder > .number-form > input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.order-call > .holder > .number-form > button {
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.order-call > .holder > .number-form > button:focus,
+button:active {
+  box-shadow: none;
+}

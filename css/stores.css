@@ -1,0 +1,74 @@
+.main > .stores {
+  font-family: "Roboto Medium";
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main > .stores > .holder {
+  margin: 50px 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.main > .stores > .holder > .heading {
+  font-size: 40px;
+}
+
+.main > .stores > .holder > .text {
+  font-size: 16px;
+}
+
+.main > .stores > .holder > .navigation {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main > .stores > .holder > .navigation > .navigation-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* .main > .stores > .holder > .navigation > .navigation-item > .logo {} */
+
+.main > .stores > .holder > .navigation > .navigation-item > .text {
+  font-size: 16px;
+}
+
+/* .main > .stores > .holder > .store {} */
+
+/* .main > .stores > .holder > .store > .info {} */
+
+/* .main > .stores > .holder > .store > .info > .name {} */
+
+/* .main > .stores > .holder > .store > .info > .contact {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .logo {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .header {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .text {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .media {} */
+
+/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo {} */
+
+/* .main > .stores > .holder > .store > .info > .media {} */
+
+/* .main > .stores > .holder > .store > .info > .media > .logo {} */
+
+/* .main > .stores > .holder > .store > .info > .show-on-map {} */
+
+/* .main > .stores > .holder > .store > .carousel {} */

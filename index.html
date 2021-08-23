@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Splide CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Flower Place</title>
+  </head>
+  <body>
+    <section class="main">
+      <!-- Header -->
+      <section class="header">
+        <section class="top-header">
+          <div class="left-group">
+            <div class="visa-container">
+              <div class="visa-logo">
+                <img src="/images/visa-logo.svg" alt="visa logo" />
+              </div>
+              <div class="visa-text"></div>
+              <img src="/images/visa-text.svg" alt="visa logo" />
+            </div>
+            <div class="ver-divider"></div>
+            <div class="text">
+              Бесплатная доставка по Москве для всех заказов от 2000 RUB
+            </div>
+          </div>
+          <div class="right-group">
+            <div class="signin">Войти</div>
+            <div class="ver-divider"></div>
+            <div class="text">Oтслеживание вашего заказа</div>
+          </div>
+        </section>
+        <div class="hor-divider"></div>
+        <section class="main-header">
+          <div class="logo">
+            <img src="/images/flower-place-logo.svg" alt="flower place" />
+          </div>
+          <nav class="navigation">
+            <span class="navigation-item">Наши магазины</span>
+            <span class="navigation-item">Доставка и оплата</span>
+          </nav>
+          <div class="right-group">
+            <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+            <div class="media-icons">
+              <img
+                class="icon"
+                src="/images/whatsapp-icon.svg"
+                alt="whatsapp"
+              />
+              <img
+                class="icon"
+                src="/images/telegram-icon.svg"
+                alt="telegram"
+              />
+            </div>
+            <div class="ver-divider"></div>
+            <div class="profile">
+              <img class="icon" src="/images/heart.svg" alt="favorites" />
+              <img
+                class="icon"
+                src="/images/shopping-basket.svg"
+                alt="shopping basket"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Email -->
+      <section class="email">
+        <div class="image-holder">
+          <div class="overlay">
+            <div class="text">
+              Loading new experience for Flower and Happiness delivery.
+            </div>
+            <div class="email-form">
+              <div class="text">
+                Leave your email or phone to be aware about grand opening and
+                receive a free gift from us.
+              </div>
+              <form class="form">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Телефон или E-mail"
+                />
+                <button class="btn btn-sm btn-outline-light" type="submit">
+                  Уведомить меня
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stores -->
+      <section class="stores">
+        <div class="holder">
+          <div class="heading">Наши магазины</div>
+          <div class="text">
+            You can visit our stores to see fresh flowers and meet professional
+            florists to get advices how to take care of them.
+          </div>
+          <div class="navigation">
+            <div class="navigation-item">
+              <img
+                class="logo"
+                src="/images/location-outlined.svg"
+                alt="location"
+              />
+              <div class="text" onclick="showStoreInfo(1)">
+                Магазин на Новом Арбате
+              </div>
+            </div>
+            <div class="navigation-item">
+              <img
+                class="logo"
+                src="/images/location-outlined.svg"
+                alt="location"
+              />
+              <div class="text" onclick="showStoreInfo(2)">Магазин на Фили</div>
+            </div>
+            <div class="navigation-item">
+              <img
+                class="logo"
+                src="/images/location-outlined.svg"
+                alt="location"
+              />
+              <div class="text" onclick="showStoreInfo(3)">
+                Магазин на Можайске
+              </div>
+            </div>
+          </div>
+          <div id="store1" class="store">
+            <div class="info">
+              <div class="name"></div>
+              <div class="contact">
+                <div class="contact-item">
+                  <div class="logo"></div>
+                  <div class="content"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="logo"></div>
+                  <div class="content"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="logo"></div>
+                  <div class="content"></div>
+                  <div class="media">
+                    <div class="logo"></div>
+                    <div class="logo"></div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="logo"></div>
+                  <div class="content">
+                    <div class="header"></div>
+                    <div class="text"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="logo"></div>
+                <div class="logo"></div>
+                <div class="logo"></div>
+                <div class="logo"></div>
+              </div>
+              <div class="show-on-map"></div>
+            </div>
+            <div class="carousel"></div>
+          </div>
+          <div id="store2" class="store">Store 2</div>
+          <div id="store3" class="store">Store 3</div>
+          <!-- <div class="storeholder">
+            <div id="info"></div>
+            <div class="carousel">
+              <div id="preview"></div>
+              <div class="slider-holder">
+                <div id="image-slider" class="splide">
+                  <div class="splide__track">
+                    <ul id="image-list" class="splide__list">
+                      <li class="splide__slide">
+                        <img src="/images/s1p1.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p2.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p3.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p4.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p5.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p6.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p7.png" alt="slide" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/images/s1p8.png" alt="slide" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="slider-arrows"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- Order call -->
+      <section class="order-call">
+        <div class="holder">
+          <div class="text">
+            While we are preparing online shopping experience for you, you can
+            make an orders by calling to us. We guarantee best order experience.
+          </div>
+          <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+          <form class="number-form">
+            <input
+              class="form-control"
+              type="tel"
+              placeholder="Телефонный номер"
+            />
+            <button class="btn btn-sm" type="submit">
+              Заказать бесплатный звонок
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section class="footer">
+        <div class="main-footer">
+          <div class="stores">
+            <div class="header">Магазины</div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">ул. Новый Арбат, 3, стр. 1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">Можайское шоссе, д.41, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">м.Фили. Новозаводская улица, д.2, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+            <div class="hor-divider"></div>
+            <div class="icons">
+              <img
+                class="icon"
+                src="/images/whatsapp-icon.svg"
+                alt="whatsapp"
+              />
+              <img
+                class="icon"
+                src="/images/telegram-icon.svg"
+                alt="telegram"
+              />
+              <img
+                class="icon"
+                src="/images/instagram-icon.svg"
+                alt="instagram"
+              />
+              <img
+                class="icon"
+                src="/images/vcontact-icon.svg"
+                alt="vcontact"
+              />
+            </div>
+          </div>
+          <div class="logo-holder">
+            <img
+              class="logo"
+              src="/images/flower-place-logo.svg"
+              alt="Flower place"
+            />
+            <div class="text">
+              © 2021 Все права защищены <br />
+              «Flowers place»
+            </div>
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="bottom-footer">
+          <div class="text">karamin__</div>
+          <div class="text">2021</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Bootstarp 5 CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Store functions -->
+    <script src="/js/stores.js"></script>
+
+    <!-- Splide CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   new Splide("#image-slider", {
+      //     type: "loop",
+      //     pagination: false,
+      //     arrows: false,
+      //     perMove: 1,
+      //   }).mount();
+      // });
+    </script>
+  </body>
+</html>

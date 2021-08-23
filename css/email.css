@@ -1,0 +1,73 @@
+.main > .email {
+  margin: 0 70px 40px;
+}
+
+.main > .email > .image-holder {
+  background-image: url(/images/email-bg.png);
+  background-size: cover;
+  border-radius: 10px;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main > .email > .image-holder > .overlay {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  color: var(--white);
+  gap: 40px;
+}
+
+.main > .email > .image-holder > .overlay > .text {
+  font-size: 40px;
+  text-align: center;
+}
+
+.main > .email > .image-holder > .overlay > .email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .text {
+  text-align: center;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form > input {
+  width: auto;
+  font-size: 14px;
+  outline: white;
+  border: none;
+  height: 40px;
+  width: 320px;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form > input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form > button {
+  font-size: 14px;
+  border-width: 2px;
+  height: 40px;
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form > button:hover {
+  color: var(--text-color);
+}
+
+.main > .email > .image-holder > .overlay > .email-form > .form > button:focus,
+button:active {
+  box-shadow: none;
+}

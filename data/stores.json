@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Магазин на Новом Арбате",
+    "location": "ул. Новый Арбат, 3, стр. 1",
+    "email": "placeflower@yandex.ru",
+    "number": "+7(999)999-03-97",
+    "number_whatsapp_link": "https://wa.me//994557088909",
+    "number_telegram_link": "https://t.me/muradhajiev",
+    "working_hours": {
+      "label": "Режим работы",
+      "store": "Магазин: круглосуточно",
+      "delivery": "Доставка: в день заказа"
+    },
+    "media_links": {
+      "whatsapp": "https://wa.me//994557088909",
+      "telegram": "https://wa.me//994557088909",
+      "instagram": "https://wa.me//994557088909",
+      "vcontact": "https://wa.me//994557088909"
+    },
+    "map_location": null,
+    "images": [
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p1.png",
+      "/images/s1p2.png",
+      "/images/s1p3.png",
+      "/images/s1p4.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Магазин на Фили",
+    "location": "Можайское шоссе, д.41, к.1",
+    "email": "placeflower@yandex.ru",
+    "number": "+7(999)999-03-97",
+    "number_whatsapp_link": "https://wa.me//994557088909",
+    "number_telegram_link": "https://t.me/muradhajiev",
+    "working_hours": {
+      "label": "Режим работы",
+      "store": "Магазин: круглосуточно",
+      "delivery": "Доставка: в день заказа"
+    },
+    "media_links": {
+      "whatsapp": "https://wa.me//994557088909",
+      "telegram": "https://wa.me//994557088909",
+      "instagram": "https://wa.me//994557088909",
+      "vcontact": "https://wa.me//994557088909"
+    },
+    "map_location": null,
+    "images": []
+  },
+  {
+    "id": 3,
+    "name": "Магазин на Можайске",
+    "location": "м.Фили. Новозаводская улица, д.2, к.1",
+    "email": "placeflower@yandex.ru",
+    "number": "+7(999)999-03-97",
+    "number_whatsapp_link": "https://wa.me//994557088909",
+    "number_telegram_link": "https://t.me/muradhajiev",
+    "working_hours": {
+      "label": "Режим работы",
+      "store": "Магазин: круглосуточно",
+      "delivery": "Доставка: в день заказа"
+    },
+    "media_links": {
+      "whatsapp": "https://wa.me//994557088909",
+      "telegram": "https://wa.me//994557088909",
+      "instagram": "https://wa.me//994557088909",
+      "vcontact": "https://wa.me//994557088909"
+    },
+    "map_location": null,
+    "images": []
+  }
+]
