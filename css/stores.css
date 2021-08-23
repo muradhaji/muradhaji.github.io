@@ -7,7 +7,7 @@
 }
 
 .main > .stores > .holder {
-  margin: 50px 70px;
+  padding: 50px 70px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,40 +35,128 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 
-/* .main > .stores > .holder > .navigation > .navigation-item > .logo {} */
+.main > .stores > .holder > .navigation > .navigation-item > .logo {
+  width: 22px;
+  height: 22px;
+}
 
 .main > .stores > .holder > .navigation > .navigation-item > .text {
   font-size: 16px;
 }
 
-/* .main > .stores > .holder > .store {} */
+.main > .stores > .holder > .store {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
 
-/* .main > .stores > .holder > .store > .info {} */
+.main > .stores > .holder > .store > .info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-/* .main > .stores > .holder > .store > .info > .name {} */
+.main > .stores > .holder > .store > .info > .name {
+  font-size: 24px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact {} */
+.main > .stores > .holder > .store > .info > .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item {
+  display: flex;
+  gap: 10px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .logo {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .logo {
+  width: 20px;
+  height: 20px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .content {
+  font-size: 16px;
+}
 
 /* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .header {} */
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .text {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .text {
+  font-size: 14px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .media {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .media {
+  display: flex;
+  gap: 4px;
+}
 
-/* .main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo {
+  width: 24px;
+  height: 24px;
+}
 
-/* .main > .stores > .holder > .store > .info > .media {} */
+.main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo > img {
+  width: 100%;
+  height: 100%;
+}
 
-/* .main > .stores > .holder > .store > .info > .media > .logo {} */
+.main > .stores > .holder > .store > .info > .media {
+  display: flex;
+  gap: 10px;
+}
 
-/* .main > .stores > .holder > .store > .info > .show-on-map {} */
+.main > .stores > .holder > .store > .info > .media > .logo {
+  width: 28px;
+  height: 28px;
+}
 
-/* .main > .stores > .holder > .store > .carousel {} */
+.main > .stores > .holder > .store > .info > .media > .logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.main > .stores > .holder > .store > .info > .show-on-map {
+  font-size: 16px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.main > .stores > .holder > .store > .carousel {
+  width: 70%;
+}
+
+.main > .stores > .holder > .store > .carousel > .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main > .stores > .holder > .store > .carousel > .inner > .preview {
+  flex-grow: 1;
+}
+
+.main > .stores > .holder > .store > .carousel > .inner > .preview > img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.main > .stores > .holder > .store > .carousel > .inner > .slider {
+}
+
+.splide__slide {
+  cursor: pointer;
+}
+
+.splide__slide img {
+  width: 150px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
+}

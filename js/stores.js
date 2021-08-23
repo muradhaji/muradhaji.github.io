@@ -1,114 +1,86 @@
+const API_URL = "http://192.168.0.144:5555/api/"
+
 const showStoreInfo = (storeId) => {
-  let store1 = document.getElementById("store1");
-  let store2 = document.getElementById("store2");
-  let store3 = document.getElementById("store3");
-  store1.style.display = "none";
-  store2.style.display = "none";
-  store3.style.display = "none";
-  switch (storeId) {
-    case 1:
-      store1.style.display = "block";
-      break;
-    case 2:
-      store2.style.display = "block";
-      break;
-    case 3:
-      store3.style.display = "block";
-      break;
+  for(let i = 1 ; i < 4 ; i++) {
+    if(i === storeId) {
+      activateNavigation(i);
+    } else {
+      hideNavigation(i);
+    }
   }
-  // fetch("../data/stores.json", { method: "get" })
-  //   .then((res) => res.json())
-  //   .then((json) => {
-  //     let store = json.find((item) => item.id === storeId);
-  //     renderStoreInfo(store);
-  //     // renderImages(store.images);
-  //   });
 };
 
-const renderImages = (images) => {
-  if (!Array.isArray(images) || !images.length) {
-    return "There is no images images.";
-  }
-  let imagelist = document.getElementById("image-list");
-  let render = "";
-  for (let url of images) {
-    render += `<li class="splide__slide"><img src="${url}" alt="slide" /></li>`;
-  }
-  imagelist.innerHTML = render;
-  console.log("Render: ", render);
-};
+const activateNavigation = (id) => {
+  let store = document.getElementById(`store${id}`);
+  let storelogo = document.getElementById(`storelogo${id}`);
+  let storelogoactive = document.getElementById(`storelogo${id}active`);
+  let navtext = document.getElementById(`storenav${id}`)
+  store.style.display = "flex";
+  storelogo.style.display = "none";
+  storelogoactive.style.display = "block";
+  navtext.style.color = "var(--primary-color)"
+}
 
-const renderStoreInfo = (store) => {
-  const storeHolder = document.getElementById("info");
-  const render = `
-    <div class="name">${store.name}</div>
-    <div class="location">
-      <img
-        class="logo"
-        src="/images/location-outlined.svg"
-        alt="location"
-      />
-      <div class="content">${store.location}</div>
-    </div>
-    <div class="email">
-      <img class="logo" src="/images/email.svg" alt="email" />
-      <a href="mailto:${store.email}">${store.email}</a>
-    </div>
-    <div class="number">
-      <img class="logo" src="/images/telephone.svg" alt="telephone" />
-      <a href="tel:${store.number}">${store.number}</a>
-      <div class="media">
-        <a class="link" href="${store.number_whatsapp_link}" target="_blank"
-          ><img
-            class="logo"
-            src="/images/whatsapp-icon.svg"
-            alt="whatsapp"
-        /></a>
-        <a class="link" href="${store.number_telegram_link}" target="_blank"
-          ><img
-            class="logo"
-            src="/images/telegram-icon.svg"
-            alt="telegram"
-        /></a>
-      </div>
-    </div>
-    <div class="working-hours">
-      <img class="logo" src="/images/clock.svg" alt="clock" />
-      <div class="content">
-        <div class="label">${store.working_hours.label}</div>
-        <div class="store">${store.working_hours.store}</div>
-        <div class="delivery">${store.working_hours.delivery}</div>
-      </div>
-    </div>
-    <div class="media">
-      <a class="link" href="${store.media_links.whatsapp}" target="_blank"
-        ><img
-          class="logo"
-          src="/images/whatsapp-icon.svg"
-          alt="whatsapp"
-      /></a>
-      <a class="link" href="${store.media_links.telegram}" target="_blank"
-        ><img
-          class="logo"
-          src="/images/telegram-icon.svg"
-          alt="telegram"
-      /></a>
-      <a class="link" href="${store.media_links.instagram}" target="_blank"
-        ><img
-          class="logo"
-          src="/images/instagram-icon.svg"
-          alt="instagram"
-      /></a>
-      <a class="link" href="${store.media_links.vcontact}" target="_blank"
-        ><img
-          class="logo"
-          src="/images/vcontact-icon.svg"
-          alt="vcontact"
-      /></a>
-    </div>
-    <div class="show-on-map">Показать на карте</div>
-  `;
-  storeHolder.innerHTML = render;
-};
+const hideNavigation = (id) => {
+  let store = document.getElementById(`store${id}`);
+  let storelogo = document.getElementById(`storelogo${id}`);
+  let storelogoactive = document.getElementById(`storelogo${id}active`);
+  let navtext = document.getElementById(`storenav${id}`)
+  store.style.display = "none";
+  storelogo.style.display = "block";
+  storelogoactive.style.display = "none";
+  navtext.style.color = "var(--text-color)"
+}
+
+const showMap = (id) => {
+  const map = document.getElementById(`map${id}`);
+  const preview = document.getElementById(`preview${id}`);
+  map.style.display = 'block';
+  preview.style.display = 'none';
+}
+
+const showImage = (id, url) => {
+  const map = document.getElementById(`map${id}`);
+  const preview = document.getElementById(`preview${id}`);
+  map.style.display = 'none';
+  preview.style.display = 'block';
+  preview.src = url;
+}
+
+const isEmail = (text) => {
+  const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return mailFormat.test(text);
+}
+
+const isNumber = (text) => {
+  var numberFormat = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]{8,14}$/g
+  return numberFormat.test(text);
+}
+
+const subscriptionForm = document.getElementById('subscriptionform');
+
+subscriptionForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const text = event.target.numberormail.value;
+  console.log(text)
+  console.log(isEmail(text));
+  console.log(isNumber(text));
+})
+
+const orderForm = document.getElementById('orderform');
+
+orderForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const number = event.target.number.value;
+  console.log(number);
+  fetch(`${API_URL}numbers/`, {
+    method: "post",
+    headers: {
+      "Authorization": 'Basic ' + btoa("davud:davud19"),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({"subnNumber": number})
+  }).then(res => console.log(res))
+})
 
 showStoreInfo(1);

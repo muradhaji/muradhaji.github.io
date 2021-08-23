@@ -4,21 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Bootstrap 5 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- Splide CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css" />
     <title>Flower Place</title>
@@ -37,9 +26,7 @@
               <img src="/images/visa-text.svg" alt="visa logo" />
             </div>
             <div class="ver-divider"></div>
-            <div class="text">
-              Бесплатная доставка по Москве для всех заказов от 2000 RUB
-            </div>
+            <div class="text"> Бесплатная доставка по Москве для всех заказов от 2000 RUB </div>
           </div>
           <div class="right-group">
             <div class="signin">Войти</div>
@@ -59,25 +46,13 @@
           <div class="right-group">
             <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
             <div class="media-icons">
-              <img
-                class="icon"
-                src="/images/whatsapp-icon.svg"
-                alt="whatsapp"
-              />
-              <img
-                class="icon"
-                src="/images/telegram-icon.svg"
-                alt="telegram"
-              />
+              <img class="icon" src="/images/whatsapp-icon.svg" alt="whatsapp" />
+              <img class="icon" src="/images/telegram-icon.svg" alt="telegram" />
             </div>
             <div class="ver-divider"></div>
             <div class="profile">
               <img class="icon" src="/images/heart.svg" alt="favorites" />
-              <img
-                class="icon"
-                src="/images/shopping-basket.svg"
-                alt="shopping basket"
-              />
+              <img class="icon" src="/images/shopping-basket.svg" alt="shopping basket" />
             </div>
           </div>
         </section>
@@ -86,23 +61,12 @@
       <section class="email">
         <div class="image-holder">
           <div class="overlay">
-            <div class="text">
-              Loading new experience for Flower and Happiness delivery.
-            </div>
+            <div class="text"> Loading new experience for Flower and Happiness delivery. </div>
             <div class="email-form">
-              <div class="text">
-                Leave your email or phone to be aware about grand opening and
-                receive a free gift from us.
-              </div>
-              <form class="form">
-                <input
-                  class="form-control"
-                  type="email"
-                  placeholder="Телефон или E-mail"
-                />
-                <button class="btn btn-sm btn-outline-light" type="submit">
-                  Уведомить меня
-                </button>
+              <div class="text"> Leave your email or phone to be aware about grand opening and receive a free gift from us. </div>
+              <form id="subscriptionform" class="form">
+                <input name="numberormail" class="form-control" type="text" placeholder="Телефон или E-mail" />
+                <button class="btn btn-sm btn-outline-light" type="submit"> Уведомить меня </button>
               </form>
             </div>
           </div>
@@ -112,138 +76,265 @@
       <section class="stores">
         <div class="holder">
           <div class="heading">Наши магазины</div>
-          <div class="text">
-            You can visit our stores to see fresh flowers and meet professional
-            florists to get advices how to take care of them.
-          </div>
+          <div class="text"> You can visit our stores to see fresh flowers and meet professional florists to get advices how to take care of them. </div>
           <div class="navigation">
-            <div class="navigation-item">
-              <img
-                class="logo"
-                src="/images/location-outlined.svg"
-                alt="location"
-              />
-              <div class="text" onclick="showStoreInfo(1)">
-                Магазин на Новом Арбате
-              </div>
+            <div class="navigation-item" onclick="showStoreInfo(1)">
+              <img id="storelogo1" class="logo" src="/images/location-outlined.svg" alt="location" />
+              <img id="storelogo1active" class="logo" src="/images/location-outlined-active.svg" alt="location" />
+              <div id="storenav1" class="text"> Магазин на Новом Арбате </div>
             </div>
-            <div class="navigation-item">
-              <img
-                class="logo"
-                src="/images/location-outlined.svg"
-                alt="location"
-              />
-              <div class="text" onclick="showStoreInfo(2)">Магазин на Фили</div>
+            <div class="navigation-item" onclick="showStoreInfo(2)">
+              <img id="storelogo2" class="logo" src="/images/location-outlined.svg" alt="location" />
+              <img id="storelogo2active" class="logo" src="/images/location-outlined-active.svg" alt="location" />
+              <div id="storenav2" class="text">Магазин на Фили</div>
             </div>
-            <div class="navigation-item">
-              <img
-                class="logo"
-                src="/images/location-outlined.svg"
-                alt="location"
-              />
-              <div class="text" onclick="showStoreInfo(3)">
-                Магазин на Можайске
-              </div>
+            <div class="navigation-item" onclick="showStoreInfo(3)">
+              <img id="storelogo3" class="logo" src="/images/location-outlined.svg" alt="location" />
+              <img id="storelogo3active" class="logo" src="/images/location-outlined-active.svg" alt="location" />
+              <div id="storenav3" class="text"> Магазин на Можайске </div>
             </div>
           </div>
           <div id="store1" class="store">
             <div class="info">
-              <div class="name"></div>
+              <div class="name">Магазин на Новом Арбате</div>
               <div class="contact">
                 <div class="contact-item">
-                  <div class="logo"></div>
-                  <div class="content"></div>
+                  <img class="logo" src="/images/location-outlined.svg" alt="location">
+                  <div class="content">ул. Новый Арбат, 3, стр. 1,</div>
                 </div>
                 <div class="contact-item">
-                  <div class="logo"></div>
-                  <div class="content"></div>
+                  <img class="logo" src="/images/email.svg" alt="email">
+                  <div class="content">placeflower@yandex.ru</div>
                 </div>
                 <div class="contact-item">
-                  <div class="logo"></div>
-                  <div class="content"></div>
+                  <img class="logo" src="/images/telephone.svg" alt="telephone">
+                  <div class="content">+7(999)999-03-97</div>
                   <div class="media">
-                    <div class="logo"></div>
-                    <div class="logo"></div>
+                    <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                      <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                    </a>
+                    <a class="logo" href="https://t.me/muradhajiev" target="_blank">
+                      <img src="/images/telegram-icon.svg" alt="telegram">
+                    </a>
                   </div>
                 </div>
                 <div class="contact-item">
-                  <div class="logo"></div>
+                  <img class="logo" src="/images/clock.svg" alt="clock">
                   <div class="content">
-                    <div class="header"></div>
-                    <div class="text"></div>
+                    <div class="header">Режим работы</div>
+                    <div class="text">Магазин: круглосуточно <br />Доставка: в день заказа </div>
                   </div>
                 </div>
               </div>
               <div class="media">
-                <div class="logo"></div>
-                <div class="logo"></div>
-                <div class="logo"></div>
-                <div class="logo"></div>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/telegram-icon.svg" alt="telegram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/instagram-icon.svg" alt="instagram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/vcontact-icon.svg" alt="vcontact">
+                </a>
               </div>
-              <div class="show-on-map"></div>
+              <div class="show-on-map" onclick="showMap(1)">Показать на карте</div>
             </div>
-            <div class="carousel"></div>
-          </div>
-          <div id="store2" class="store">Store 2</div>
-          <div id="store3" class="store">Store 3</div>
-          <!-- <div class="storeholder">
-            <div id="info"></div>
             <div class="carousel">
-              <div id="preview"></div>
-              <div class="slider-holder">
-                <div id="image-slider" class="splide">
+              <div class="inner">
+                <div class="preview">
+                  <iframe id="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4050909360385!2d49.83637271476103!3d40.37771366593661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da4624589fd%3A0xddc3a7d17066f74e!2zU0tTIFBMQVpBLCA0OSBGw7x6dWxpIEvDvMOnyZlzaSwgQmFrxLEsIEF6ZXJiYWlqYW4!5e0!3m2!1sen!2s!4v1629724568846!5m2!1sen!2s" width="900" height="300" style="border-radius: 10px; display: none;" allowfullscreen="" loading="lazy"></iframe>
+                  <img id="preview1" src="/images/image1.jpeg" alt="preview" width="900" height="300" style="border-radius: 10px;">
+                </div>
+                <div id="slider1" class="slider splide">
                   <div class="splide__track">
-                    <ul id="image-list" class="splide__list">
+                    <ul class="splide__list">
                       <li class="splide__slide">
-                        <img src="/images/s1p1.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image1.jpeg')" src="/images/image1.jpeg" alt="slide">
                       </li>
                       <li class="splide__slide">
-                        <img src="/images/s1p2.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image2.jpeg')" src="/images/image2.jpeg" alt="slide">
                       </li>
                       <li class="splide__slide">
-                        <img src="/images/s1p3.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image4.jpg')" src="/images/image4.jpg" alt="slide">
                       </li>
                       <li class="splide__slide">
-                        <img src="/images/s1p4.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image5.jpg')" src="/images/image5.jpg" alt="slide">
                       </li>
                       <li class="splide__slide">
-                        <img src="/images/s1p5.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image6.jpg')" src="/images/image6.jpg" alt="slide">
                       </li>
                       <li class="splide__slide">
-                        <img src="/images/s1p6.png" alt="slide" />
-                      </li>
-                      <li class="splide__slide">
-                        <img src="/images/s1p7.png" alt="slide" />
-                      </li>
-                      <li class="splide__slide">
-                        <img src="/images/s1p8.png" alt="slide" />
+                        <img onclick="showImage(1, '/images/image7.jpg')" src="/images/image7.jpg" alt="slide">
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="slider-arrows"></div>
               </div>
             </div>
-          </div> -->
+          </div>
+          <div id="store2" class="store">
+            <div class="info">
+              <div class="name">Магазин на Новом Арбате</div>
+              <div class="contact">
+                <div class="contact-item">
+                  <img class="logo" src="/images/location-outlined.svg" alt="location">
+                  <div class="content">ул. Новый Арбат, 3, стр. 1,</div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/email.svg" alt="email">
+                  <div class="content">placeflower@yandex.ru</div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/telephone.svg" alt="telephone">
+                  <div class="content">+7(999)999-03-97</div>
+                  <div class="media">
+                    <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                      <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                    </a>
+                    <a class="logo" href="https://t.me/muradhajiev" target="_blank">
+                      <img src="/images/telegram-icon.svg" alt="telegram">
+                    </a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/clock.svg" alt="clock">
+                  <div class="content">
+                    <div class="header">Режим работы</div>
+                    <div class="text">Магазин: круглосуточно <br />Доставка: в день заказа </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/telegram-icon.svg" alt="telegram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/instagram-icon.svg" alt="instagram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/vcontact-icon.svg" alt="vcontact">
+                </a>
+              </div>
+              <div class="show-on-map" onclick="showMap(2)">Показать на карте</div>
+            </div>
+            <div class="carousel">
+              <div class="inner">
+                <div class="preview">
+                  <iframe id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4050909360385!2d49.83637271476103!3d40.37771366593661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da4624589fd%3A0xddc3a7d17066f74e!2zU0tTIFBMQVpBLCA0OSBGw7x6dWxpIEvDvMOnyZlzaSwgQmFrxLEsIEF6ZXJiYWlqYW4!5e0!3m2!1sen!2s!4v1629724568846!5m2!1sen!2s" width="900" height="300" style="border-radius: 10px; display: none;" allowfullscreen="" loading="lazy"></iframe>
+                  <img id="preview2" src="/images/s1p1.png" alt="preview" width="900" height="300" style="border-radius: 10px;">
+                </div>
+                <div id="slider2" class="slider splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img onclick="showImage(2, '/images/s1p1.png')" src="/images/s1p1.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(2, '/images/s1p2.png')" src="/images/s1p2.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(2, '/images/s1p3.png')" src="/images/s1p3.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(2, '/images/s1p4.png')" src="/images/s1p4.png" alt="slide">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="store3" class="store">
+            <div class="info">
+              <div class="name">Магазин на Новом Арбате</div>
+              <div class="contact">
+                <div class="contact-item">
+                  <img class="logo" src="/images/location-outlined.svg" alt="location">
+                  <div class="content">ул. Новый Арбат, 3, стр. 1,</div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/email.svg" alt="email">
+                  <div class="content">placeflower@yandex.ru</div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/telephone.svg" alt="telephone">
+                  <div class="content">+7(999)999-03-97</div>
+                  <div class="media">
+                    <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                      <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                    </a>
+                    <a class="logo" href="https://t.me/muradhajiev" target="_blank">
+                      <img src="/images/telegram-icon.svg" alt="telegram">
+                    </a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <img class="logo" src="/images/clock.svg" alt="clock">
+                  <div class="content">
+                    <div class="header">Режим работы</div>
+                    <div class="text">Магазин: круглосуточно <br />Доставка: в день заказа </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/telegram-icon.svg" alt="telegram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/instagram-icon.svg" alt="instagram">
+                </a>
+                <a class="logo" href="https://wa.me//994557088909" target="_blank">
+                  <img src="/images/vcontact-icon.svg" alt="vcontact">
+                </a>
+              </div>
+              <div class="show-on-map" onclick="showMap(3)">Показать на карте</div>
+            </div>
+            <div class="carousel">
+              <div class="inner">
+                <div class="preview">
+                  <iframe id="map3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4050909360385!2d49.83637271476103!3d40.37771366593661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da4624589fd%3A0xddc3a7d17066f74e!2zU0tTIFBMQVpBLCA0OSBGw7x6dWxpIEvDvMOnyZlzaSwgQmFrxLEsIEF6ZXJiYWlqYW4!5e0!3m2!1sen!2s!4v1629724568846!5m2!1sen!2s" width="900" height="300" style="border-radius: 10px; display: none;" allowfullscreen="" loading="lazy"></iframe>
+                  <img id="preview3" src="/images/s1p1.png" alt="preview" width="900" height="300" style="border-radius: 10px;">
+                </div>
+                <div id="slider3" class="slider splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img onclick="showImage(3, '/images/s1p1.png')" src="/images/s1p1.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(3, '/images/s1p2.png')" src="/images/s1p2.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(3, '/images/s1p3.png')" src="/images/s1p3.png" alt="slide">
+                      </li>
+                      <li class="splide__slide">
+                        <img onclick="showImage(3, '/images/s1p4.png')" src="/images/s1p4.png" alt="slide">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Order call -->
       <section class="order-call">
         <div class="holder">
-          <div class="text">
-            While we are preparing online shopping experience for you, you can
-            make an orders by calling to us. We guarantee best order experience.
-          </div>
+          <div class="text"> While we are preparing online shopping experience for you, you can make an orders by calling to us. We guarantee best order experience. </div>
           <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
-          <form class="number-form">
-            <input
-              class="form-control"
-              type="tel"
-              placeholder="Телефонный номер"
-            />
-            <button class="btn btn-sm" type="submit">
-              Заказать бесплатный звонок
-            </button>
+          <form id="orderform" class="number-form">
+            <input name="number" class="form-control" type="tel" placeholder="Телефонный номер" />
+            <button class="btn btn-sm" type="submit"> Заказать бесплатный звонок </button>
           </form>
         </div>
       </section>
@@ -284,38 +375,15 @@
             <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
             <div class="hor-divider"></div>
             <div class="icons">
-              <img
-                class="icon"
-                src="/images/whatsapp-icon.svg"
-                alt="whatsapp"
-              />
-              <img
-                class="icon"
-                src="/images/telegram-icon.svg"
-                alt="telegram"
-              />
-              <img
-                class="icon"
-                src="/images/instagram-icon.svg"
-                alt="instagram"
-              />
-              <img
-                class="icon"
-                src="/images/vcontact-icon.svg"
-                alt="vcontact"
-              />
+              <img class="icon" src="/images/whatsapp-icon.svg" alt="whatsapp" />
+              <img class="icon" src="/images/telegram-icon.svg" alt="telegram" />
+              <img class="icon" src="/images/instagram-icon.svg" alt="instagram" />
+              <img class="icon" src="/images/vcontact-icon.svg" alt="vcontact" />
             </div>
           </div>
           <div class="logo-holder">
-            <img
-              class="logo"
-              src="/images/flower-place-logo.svg"
-              alt="Flower place"
-            />
-            <div class="text">
-              © 2021 Все права защищены <br />
-              «Flowers place»
-            </div>
+            <img class="logo" src="/images/flower-place-logo.svg" alt="Flower place" />
+            <div class="text"> © 2021 Все права защищены <br /> «Flowers place» </div>
           </div>
         </div>
         <div class="hor-divider"></div>
@@ -325,28 +393,42 @@
         </div>
       </section>
     </section>
-
     <!-- Bootstarp 5 CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Store functions -->
     <script src="/js/stores.js"></script>
-
     <!-- Splide CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   new Splide("#image-slider", {
-      //     type: "loop",
-      //     pagination: false,
-      //     arrows: false,
-      //     perMove: 1,
-      //   }).mount();
-      // });
+      document.addEventListener("DOMContentLoaded", function() {
+        new Splide("#slider1", {
+          start: 0,
+          type: 'loop',
+          width: "675px",
+          perPage: 4,
+          perMove: 1,
+          gap: 25,
+          pagination: false,
+        }).mount();
+        new Splide("#slider2", {
+          start: 0,
+          type: 'loop',
+          width: "675px",
+          perPage: 4,
+          perMove: 1,
+          gap: 25,
+          pagination: false,
+        }).mount();
+        new Splide("#slider3", {
+          start: 0,
+          type: 'loop',
+          width: "675px",
+          perPage: 4,
+          perMove: 1,
+          gap: 25,
+          pagination: false,
+        }).mount();
+      });
     </script>
   </body>
 </html>
