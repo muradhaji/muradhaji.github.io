@@ -21,6 +21,7 @@
 }
 
 .main > .stores > .holder > .text {
+  text-align: center;
   font-size: 16px;
 }
 
@@ -75,18 +76,38 @@
   gap: 10px;
 }
 
+.main > .stores > .holder > .store > .info > .contact > .contact-item > a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .main > .stores > .holder > .store > .info > .contact > .contact-item > .logo {
   width: 20px;
   height: 20px;
 }
 
-.main > .stores > .holder > .store > .info > .contact > .contact-item > .content {
+.main
+  > .stores
+  > .holder
+  > .store
+  > .info
+  > .contact
+  > .contact-item
+  > .content {
   font-size: 16px;
 }
 
 /* .main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .header {} */
 
-.main > .stores > .holder > .store > .info > .contact > .contact-item > .content > .text {
+.main
+  > .stores
+  > .holder
+  > .store
+  > .info
+  > .contact
+  > .contact-item
+  > .content
+  > .text {
   font-size: 14px;
 }
 
@@ -95,12 +116,29 @@
   gap: 4px;
 }
 
-.main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo {
+.main
+  > .stores
+  > .holder
+  > .store
+  > .info
+  > .contact
+  > .contact-item
+  > .media
+  > .logo {
   width: 24px;
   height: 24px;
 }
 
-.main > .stores > .holder > .store > .info > .contact > .contact-item > .media > .logo > img {
+.main
+  > .stores
+  > .holder
+  > .store
+  > .info
+  > .contact
+  > .contact-item
+  > .media
+  > .logo
+  > img {
   width: 100%;
   height: 100%;
 }
@@ -139,10 +177,19 @@
 }
 
 .main > .stores > .holder > .store > .carousel > .inner > .preview {
-  flex-grow: 1;
+  width: 100%;
+  /* flex-grow: 1; */
+}
+
+.main > .stores > .holder > .store > .carousel > .inner > .preview > iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .main > .stores > .holder > .store > .carousel > .inner > .preview > img {
+  width: 100%;
+  height: 300px;
   border-radius: 10px;
   object-fit: cover;
 }
