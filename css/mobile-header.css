@@ -1,0 +1,15 @@
+.mobile-header {
+  padding: 15px 20px;
+  height: 90px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-header > .menu-toggle-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-header > .logo {
+}

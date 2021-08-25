@@ -1,0 +1,59 @@
+.mobile-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: var(--primary-bg-color);
+}
+
+.mobile-menu > .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu > .inner > .heading {
+}
+
+.mobile-menu > .inner > .heading > .close {
+}
+
+.mobile-menu > .inner > .heading > .search {
+}
+
+.mobile-menu > .inner > .menu {
+}
+
+.mobile-menu > .inner > .menu > .menu-item {
+}
+
+.mobile-menu > .inner > .footer {
+}
+
+.mobile-menu > .inner > .footer > .number-media > .number {
+}
+
+.mobile-menu > .inner > .footer > .number-media > .media-icons {
+}
+
+.mobile-menu > .inner > .footer > .number-media > .media-icons > .icon {
+}
+
+.mobile-menu > .inner > .footer > .text1 {
+}
+
+.mobile-menu > .inner > .footer > .text2 {
+}
+
+.mobile-menu > .inner > .footer > .visa-container {
+}
+
+.mobile-menu > .inner > .footer > .visa-container > .visa-logo {
+}
+
+.mobile-menu > .inner > .footer > .visa-container > .visa-text {
+}

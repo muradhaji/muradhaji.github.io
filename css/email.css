@@ -71,3 +71,21 @@
 button:active {
   box-shadow: none;
 }
+
+@media all and (max-width: 425px) {
+  .main > .email {
+    margin: 0 15px 30px;
+  }
+  .main > .email > .image-holder {
+    height: 300px;
+  }
+  .main > .email > .image-holder > .overlay {
+    gap: 20px;
+  }
+  .main > .email > .image-holder > .overlay > .text {
+    font-size: 24px;
+  }
+  .main > .email > .image-holder > .overlay > .email-form > .form {
+    flex-wrap: wrap;
+  }
+}

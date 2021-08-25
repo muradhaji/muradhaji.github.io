@@ -1,6 +1,21 @@
 // const API_URL = "http://192.168.0.144:5555/api/";
 // const API_URL = "http://comingsoon.pythonanywhere.com/api/";
-const API_URL = "https://comingsoon.pythonanywhere.com/api/";
+// const API_URL = "https://comingsoon.pythonanywhere.com/api/";
+const API_URL = "http://157.90.29.1:8006/api/";
+
+const splideProps = {
+  type: "loop",
+  width: "100%",
+  perPage: 5,
+  perMove: 1,
+  gap: 25,
+  pagination: false,
+  breakpoints: {
+    425: {
+      gap: 10,
+    },
+  },
+};
 
 const showNotification = (type, text) => {
   Toastify({
@@ -21,6 +36,7 @@ const showStoreInfo = (storeId) => {
       hideNavigation(i);
     }
   }
+  new Splide(`#slider${storeId}`, splideProps).mount();
 };
 
 const activateNavigation = (id) => {
@@ -128,5 +144,13 @@ orderForm.addEventListener("submit", (event) => {
       });
   }
 });
+
+const openMenu = () => {
+  document.getElementById("mobile-menu").style.width = "100%";
+};
+
+const closeMenu = () => {
+  document.getElementById("mobile-menu").style.width = "0";
+};
 
 showStoreInfo(1);

@@ -1,17 +1,17 @@
-.footer {
+.main > .footer {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
 }
 
-.footer > .main-footer {
+.main > .footer > .main-footer {
   margin: 30px 150px;
   display: flex;
   align-items: top;
   justify-content: space-between;
 }
 
-.footer > .main-footer > .stores {
+.main > .footer > .main-footer > .stores {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,59 +20,59 @@
   gap: 20px;
 }
 
-.footer > .main-footer > .stores > .header {
+.main > .footer > .main-footer > .stores > .header {
   font-family: "Roboto Medium";
   font-size: 18px;
 }
 
-.footer > .main-footer > .stores > .store {
+.main > .footer > .main-footer > .stores > .store {
   display: flex;
   gap: 8px;
 }
 
-/* .footer > .main-footer > .stores > .store > .logo {} */
+/* .main > .footer > .main-footer > .stores > .store > .logo {} */
 
-/* .footer > .main-footer > .stores > .store > .location {} */
+/* .main > .footer > .main-footer > .stores > .store > .location {} */
 
-/* .footer > .main-footer > .stores > .store > .location > .address {} */
+/* .main > .footer > .main-footer > .stores > .store > .location > .address {} */
 
-/* .footer > .main-footer > .stores > .store > .location > .number {} */
+/* .main > .footer > .main-footer > .stores > .store > .location > .number {} */
 
-.footer > .main-footer > .media {
+.main > .footer > .main-footer > .media {
   display: flex;
   flex-direction: column;
   align-self: center;
   gap: 8px;
 }
 
-.footer > .main-footer > .media > .number {
+.main > .footer > .main-footer > .media > .number {
   font-size: 24px;
   text-decoration: none;
   color: var(--text-color);
 }
 
-.footer > .main-footer > .media > .hor-divider {
+.main > .footer > .main-footer > .media > .hor-divider {
   border-top: 1px solid var(--text-color);
   width: 100%;
   opacity: 25%;
 }
 
-.footer > .main-footer > .media > .icons {
+.main > .footer > .main-footer > .media > .icons {
   display: flex;
   justify-content: space-between;
 }
 
-.footer > .main-footer > .media > .icons > .icon {
+.main > .footer > .main-footer > .media > .icons > .icon {
   width: 30px;
   height: 30px;
 }
 
-.footer > .main-footer > .media > .icons > .icon > img {
+.main > .footer > .main-footer > .media > .icons > .icon > img {
   width: 100%;
   height: 100%;
 }
 
-.footer > .main-footer > .logo-holder {
+.main > .footer > .main-footer > .logo-holder {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -80,22 +80,22 @@
   gap: 4px;
 }
 
-.footer > .main-footer > .logo-holder > .logo {
+.main > .footer > .main-footer > .logo-holder > .logo {
   width: 220px;
 }
 
-.footer > .main-footer > .logo-holder > .text {
+.main > .footer > .main-footer > .logo-holder > .text {
   font-family: "Roboto Light";
   text-align: right;
 }
 
-.footer > .hor-divider {
+.main > .footer > .hor-divider {
   border-top: 1px solid var(--text-color);
   width: 100%;
   opacity: 25%;
 }
 
-.footer > .bottom-footer {
+.main > .footer > .bottom-footer {
   margin: 0 150px;
   height: 30px;
   display: flex;
@@ -103,6 +103,15 @@
   justify-content: space-between;
 }
 
-.footer > .bottom-footer > .text {
+.main > .footer > .bottom-footer > .text {
   font-family: "Roboto Medium";
+}
+
+@media all and (max-width: 425px) {
+  .main > .footer {
+    display: none;
+  }
+  .main > .mobile-footer {
+    display: flex;
+  }
 }

@@ -2,10 +2,13 @@
 @import url(normalize.css);
 @import url(fonts.css);
 @import url(main.css);
+@import url(mobile-header.css);
+@import url(mobile-menu.css);
 @import url(header.css);
 @import url(email.css);
 @import url(stores.css);
 @import url(ordercall.css);
+@import url(mobile-footer.css);
 @import url(footer.css);
 
 :root {
@@ -25,6 +28,7 @@ html {
 
 body {
   background-color: var(--primary-bg-color);
+  width: 100%;
 }
 
 .custom-toast > .toast-close {

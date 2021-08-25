@@ -63,3 +63,19 @@
 button:active {
   box-shadow: none;
 }
+
+@media all and (max-width: 425px) {
+  .order-call {
+    background-image: none;
+    height: auto;
+  }
+  .order-call > .holder {
+    margin: 20px 30px;
+  }
+  .order-call > .holder > .text {
+    font-size: 18px;
+  }
+  .order-call > .holder > .number {
+    font-size: 18px;
+  }
+}

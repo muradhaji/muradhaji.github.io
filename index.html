@@ -92,18 +92,84 @@
           </div>
         </section>
       </section>
+      <!-- Mobile header -->
+      <section class="mobile-header">
+        <img
+          onclick="openMenu()"
+          class="menu-toggle-btn"
+          src="/images/menu-toggle-icon.svg"
+          alt="menu"
+        />
+        <img
+          class="logo"
+          src="/images/flower-place-logo.svg"
+          alt="flower logo"
+        />
+        <div class="menu-toggle-btn"></div>
+      </section>
+      <!-- Mobile menu -->
+      <section id="mobile-menu" class="mobile-menu">
+        <div class="inner">
+          <div class="heading">
+            <img
+              onclick="closeMenu()"
+              class="close"
+              src="/images/menu-close-button.svg"
+              alt="close menu"
+            />
+            <img class="search" src="/images/search.svg" alt="close menu" />
+          </div>
+          <div class="menu">
+            <a class="menu-item" href="">Наши магазины</a>
+            <a class="menu-item" href="">Доставка и оплата</a>
+          </div>
+          <div class="footer">
+            <div class="number-media">
+              <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+              <div class="media-icons">
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+                </a>
+                <a class="icon" href="https://t.me/muradhajiev" target="_blank">
+                  <img src="/images/telegram-icon.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+            <p class="text1">
+              Бесплатная доставка по Москве для всех заказов от 2000 RUB
+            </p>
+            <p class="text2">Oтслеживание вашего заказа</p>
+            <div class="visa-container">
+              <img
+                class="visa-logo"
+                src="/images/visa-logo.svg"
+                alt="visa logo"
+              />
+              <img
+                class="visa-text"
+                src="/images/visa-text.svg"
+                alt="visa logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Email -->
       <section class="email">
         <div class="image-holder">
           <div class="overlay">
-            <div class="text">
+            <p class="text">
               Loading new experience<br />for Flower and Happiness delivery.
-            </div>
+            </p>
             <div class="email-form">
-              <div class="text">
+              <p class="text">
                 Leave your email or phone to be aware about grand opening and
                 receive a free gift from us.
-              </div>
+              </p>
               <form id="subscriptionform" class="form">
                 <input
                   name="numberormail"
@@ -271,7 +337,6 @@
                   <iframe
                     id="map1"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3360115984246!2d37.59632231539116!3d55.752664999470824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4c517cc4df%3A0x252cc9fd4ec77ffd!2zTmV3IEFyYmF0IEF2ZSwgMyDRgdGC0YDQvtC10L3QuNC1IDEsIE1vc2t2YSwgUnVzc2lhLCAxMTkwMTk!5e0!3m2!1sen!2s!4v1629806231154!5m2!1sen!2s"
-                    style="border-radius: 10px; display: none"
                     allowfullscreen=""
                     loading="lazy"
                   ></iframe>
@@ -279,7 +344,7 @@
                     id="preview1"
                     src="/images/image1.jpeg"
                     alt="preview"
-                    style="border-radius: 10px"
+                    style="display: none"
                   />
                 </div>
                 <div id="slider1" class="slider splide">
@@ -429,7 +494,6 @@
                   <iframe
                     id="map2"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8983.373875353622!2d37.47803403695122!3d55.7438486672463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5494e0465a4a1%3A0xbf9ca99996b5084a!2sFili%2C%20Moscow%2C%20Russia%2C%20121309!5e0!3m2!1sen!2s!4v1629806339835!5m2!1sen!2s"
-                    style="border-radius: 10px; display: none"
                     allowfullscreen=""
                     loading="lazy"
                   ></iframe>
@@ -437,7 +501,7 @@
                     id="preview2"
                     src="/images/image2.jpeg"
                     alt="preview"
-                    style="border-radius: 10px"
+                    style="display: none"
                   />
                 </div>
                 <div id="slider2" class="slider splide">
@@ -585,7 +649,6 @@
                   <iframe
                     id="map3"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.4159856484284!2d37.40940731538939!3d55.716522602257704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ef48a01ffcf%3A0x263c56ac2406c882!2zTW96aGF5c2tveWUgU2hvc3NlLCA0MSDQutC-0YDQv9GD0YEgMSwgTW9za3ZhLCBSdXNzaWEsIDEyMTM1NA!5e0!3m2!1sen!2s!4v1629806469238!5m2!1sen!2s"
-                    style="border-radius: 10px; display: none"
                     allowfullscreen=""
                     loading="lazy"
                   ></iframe>
@@ -593,7 +656,7 @@
                     id="preview3"
                     src="/images/image4.jpg"
                     alt="preview"
-                    style="border-radius: 10px"
+                    style="display: none"
                   />
                 </div>
                 <div id="slider3" class="slider splide">
@@ -759,6 +822,106 @@
           <div class="text">2021</div>
         </div>
       </section>
+      <!-- Mobile footer -->
+      <section class="mobile-footer">
+        <div class="main-footer">
+          <div class="stores">
+            <div class="header">Магазины</div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">ул. Новый Арбат, 3, стр. 1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">Можайское шоссе, д.41, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">м.Фили. Новозаводская улица, д.2, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+          </div>
+          <div class="media-visa">
+            <div class="media">
+              <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+              <div class="hor-divider"></div>
+              <div class="icons">
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/telegram-icon.svg" alt="telegram" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/instagram-icon.svg" alt="instagram" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/vcontact-icon.svg" alt="vcontact" />
+                </a>
+              </div>
+            </div>
+            <div class="visa-container">
+              <img
+                class="visa-logo"
+                src="/images/visa-logo.svg"
+                alt="visa logo"
+              />
+              <img
+                class="visa-text"
+                src="/images/visa-text.svg"
+                alt="visa logo"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="logo-holder">
+          <img
+            class="logo"
+            src="/images/flower-place-logo.svg"
+            alt="Flower place"
+          />
+          <div class="text">
+            © 2021 Все права защищены <br />
+            «Flowers place»
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="bottom-footer">
+          <div class="text">karamin__</div>
+          <div class="text">2021</div>
+        </div>
+      </section>
     </section>
     <!-- Bootstarp 5 CDN -->
     <script
@@ -773,34 +936,6 @@
     ></script>
     <!-- Splide CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#slider1", {
-          type: "loop",
-          width: "675px",
-          perPage: 4,
-          perMove: 1,
-          gap: 25,
-          pagination: false,
-        }).mount();
-        new Splide("#slider2", {
-          type: "loop",
-          width: "675px",
-          perPage: 4,
-          perMove: 1,
-          gap: 25,
-          pagination: false,
-        }).mount();
-        new Splide("#slider3", {
-          type: "loop",
-          width: "675px",
-          perPage: 4,
-          perMove: 1,
-          gap: 25,
-          pagination: false,
-        }).mount();
-      });
-    </script>
     <!-- Store functions -->
     <script src="/js/stores.js"></script>
   </body>
