@@ -11,7 +11,7 @@ const splideProps = {
   gap: 25,
   pagination: false,
   breakpoints: {
-    425: {
+    480: {
       gap: 10,
     },
   },

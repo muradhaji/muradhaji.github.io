@@ -125,7 +125,7 @@
   height: 24px;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 480px) {
   .main > .header {
     display: none;
   }

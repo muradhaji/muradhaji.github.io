@@ -209,7 +209,7 @@
   border-radius: 5px;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 480px) {
   .main > .stores > .holder {
     padding: 30px 20px;
   }

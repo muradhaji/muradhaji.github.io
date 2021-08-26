@@ -72,7 +72,7 @@ button:active {
   box-shadow: none;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 480px) {
   .main > .email {
     margin: 0 15px 30px;
   }

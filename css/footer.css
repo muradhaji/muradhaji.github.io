@@ -107,7 +107,7 @@
   font-family: "Roboto Medium";
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 480px) {
   .main > .footer {
     display: none;
   }
