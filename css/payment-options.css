@@ -1,0 +1,66 @@
+.payment-options {
+  padding: 30px 150px;
+  font-family: "Roboto Medium";
+}
+
+.payment-options > .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.payment-options > .inner > h2 {
+  font-size: 20px;
+}
+
+.payment-options > .inner > .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-options > .inner > .options > .option {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.payment-options > .inner > .options > .option > .logo {
+  height: 32px;
+}
+
+.payment-options > .inner > .options > .option > .google,
+.apple {
+  height: 22px;
+  margin: 5px 0;
+}
+
+.payment-options > .inner > .options > .option > p {
+  font-size: 18px;
+}
+
+@media all and (max-width: 425px) {
+  .payment-options {
+    padding: 20px 15px;
+  }
+
+  .payment-options > .inner > .options > .option {
+    gap: 8px;
+  }
+
+  .payment-options > .inner > .options > .option > .logo {
+    height: 16px;
+  }
+
+  .payment-options > .inner > .options > .option > .google,
+  .apple {
+    height: 16px;
+    margin: 0;
+  }
+
+  .payment-options > .inner > .options > .option > p {
+    font-size: 12px;
+  }
+}

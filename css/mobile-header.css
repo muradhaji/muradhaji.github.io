@@ -1,9 +1,13 @@
 .mobile-header {
-  padding: 15px 20px;
+  padding: 10px 20px;
   height: 90px;
   display: none;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--primary-bg-color);
+  /* position: sticky;
+  top: 0;
+  z-index: 4; */
 }
 
 .mobile-header > .menu-toggle-btn {
@@ -12,4 +16,6 @@
 }
 
 .mobile-header > .logo {
+  width: 120px;
+  /* height: 60px; */
 }

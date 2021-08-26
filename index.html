@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>Flower Place</title>
   </head>
-  <body>
+  <body id="app">
     <section class="main">
       <!-- Header -->
       <section class="header">
@@ -59,12 +59,14 @@
         <section class="main-header">
           <img
             class="logo"
-            src="/images/flower-place-logo.svg"
+            src="/images/main-logo-120x60.png"
             alt="flower place"
           />
           <nav class="navigation">
             <a class="navigation-item" href="#ourstores">Наши магазины</a>
-            <a class="navigation-item" href="#">Доставка и оплата</a>
+            <a class="navigation-item" href="delivery.html"
+              >Доставка и оплата</a
+            >
           </nav>
           <div class="right-group">
             <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
@@ -102,14 +104,14 @@
         />
         <img
           class="logo"
-          src="/images/flower-place-logo.svg"
+          src="/images/main-logo-120x60.png"
           alt="flower logo"
         />
         <div class="menu-toggle-btn"></div>
       </section>
       <!-- Mobile menu -->
       <section id="mobile-menu" class="mobile-menu">
-        <div class="inner">
+        <div id="mobile-menu-inner" class="inner">
           <div class="heading">
             <img
               onclick="closeMenu()"
@@ -120,8 +122,12 @@
             <img class="search" src="/images/search.svg" alt="close menu" />
           </div>
           <div class="menu">
-            <a class="menu-item" href="">Наши магазины</a>
-            <a class="menu-item" href="">Доставка и оплата</a>
+            <a class="menu-item" href="#ourstores" onclick="closeMenu()"
+              >Наши магазины</a
+            >
+            <a class="menu-item" href="delivery.html" onclick="closeMenu()"
+              >Доставка и оплата</a
+            >
           </div>
           <div class="footer">
             <div class="number-media">
@@ -139,10 +145,12 @@
                 </a>
               </div>
             </div>
-            <p class="text1">
-              Бесплатная доставка по Москве для всех заказов от 2000 RUB
-            </p>
-            <p class="text2">Oтслеживание вашего заказа</p>
+            <div class="text">
+              <p class="text1">
+                Бесплатная доставка по Москве для всех заказов от 2000 RUB
+              </p>
+              <p class="text2">Oтслеживание вашего заказа</p>
+            </div>
             <div class="visa-container">
               <img
                 class="visa-logo"
@@ -807,7 +815,7 @@
           <div class="logo-holder">
             <img
               class="logo"
-              src="/images/flower-place-logo.svg"
+              src="/images/main-logo-220x110.png"
               alt="Flower place"
             />
             <div class="text">
@@ -908,7 +916,7 @@
         <div class="logo-holder">
           <img
             class="logo"
-            src="/images/flower-place-logo.svg"
+            src="/images/main-logo-120x60.png"
             alt="Flower place"
           />
           <div class="text">
@@ -937,6 +945,7 @@
     <!-- Splide CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <!-- Store functions -->
-    <script src="/js/stores.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/utils.js"></script>
   </body>
 </html>

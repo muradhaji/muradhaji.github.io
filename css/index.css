@@ -8,6 +8,9 @@
 @import url(email.css);
 @import url(stores.css);
 @import url(ordercall.css);
+@import url(delivery-payment.css);
+@import url(deliver-options.css);
+@import url(payment-options.css);
 @import url(mobile-footer.css);
 @import url(footer.css);
 
@@ -23,11 +26,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
   background-color: var(--primary-bg-color);
+  min-height: -webkit-fill-available;
   width: 100%;
 }
 

@@ -145,12 +145,4 @@ orderForm.addEventListener("submit", (event) => {
   }
 });
 
-const openMenu = () => {
-  document.getElementById("mobile-menu").style.width = "100%";
-};
-
-const closeMenu = () => {
-  document.getElementById("mobile-menu").style.width = "0";
-};
-
 showStoreInfo(1);

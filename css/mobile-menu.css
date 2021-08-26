@@ -1,52 +1,104 @@
 .mobile-menu {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: var(--primary-bg-color);
 }
 
 .mobile-menu > .inner {
+  padding: 30px;
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .mobile-menu > .inner > .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mobile-menu > .inner > .heading > .close {
+  width: 28px;
+  height: 28px;
 }
 
 .mobile-menu > .inner > .heading > .search {
+  width: 28px;
+  height: 28px;
 }
 
 .mobile-menu > .inner > .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
 }
 
 .mobile-menu > .inner > .menu > .menu-item {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .mobile-menu > .inner > .footer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.mobile-menu > .inner > .footer > .number-media {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .mobile-menu > .inner > .footer > .number-media > .number {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
 }
 
 .mobile-menu > .inner > .footer > .number-media > .media-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .mobile-menu > .inner > .footer > .number-media > .media-icons > .icon {
 }
 
-.mobile-menu > .inner > .footer > .text1 {
+.mobile-menu > .inner > .footer > .number-media > .media-icons > .icon > img {
+  width: 24px;
+  height: 24px;
 }
 
-.mobile-menu > .inner > .footer > .text2 {
+.mobile-menu > .inner > .footer > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.mobile-menu > .inner > .footer > .text > .text1 {
+}
+
+.mobile-menu > .inner > .footer > .text > .text2 {
+  color: var(--primary-color);
 }
 
 .mobile-menu > .inner > .footer > .visa-container {

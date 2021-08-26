@@ -1,0 +1,35 @@
+.delivery-payment {
+  padding: 30px 150px;
+}
+
+.delivery-payment .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delivery-payment > .inner > h1 {
+  font-size: 30px;
+}
+
+.delivery-payment > .inner > p {
+  font-size: 14px;
+}
+
+@media all and (max-width: 425px) {
+  .delivery-payment {
+    padding: 20px 15px;
+  }
+
+  .delivery-payment .inner {
+    gap: 2px;
+  }
+
+  .delivery-payment > .inner > h1 {
+    font-size: 18px;
+  }
+
+  .delivery-payment > .inner > p {
+    font-size: 12px;
+  }
+}

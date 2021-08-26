@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Toastify CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- Splide CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Доставка и оплата</title>
+  </head>
+  <body id="app">
+    <section class="main">
+      <!-- Header -->
+      <section class="header">
+        <section class="top-header">
+          <div class="left-group">
+            <div class="visa-container">
+              <img
+                class="visa-logo"
+                src="/images/visa-logo.svg"
+                alt="visa logo"
+              />
+              <img
+                class="visa-text"
+                src="/images/visa-text.svg"
+                alt="visa logo"
+              />
+            </div>
+            <div class="ver-divider"></div>
+            <p class="text">
+              Бесплатная доставка по Москве для всех заказов от 2000 RUB
+            </p>
+          </div>
+          <div class="right-group">
+            <p class="signin">Войти</p>
+            <div class="ver-divider"></div>
+            <p class="text">Oтслеживание вашего заказа</p>
+          </div>
+        </section>
+        <div class="hor-divider"></div>
+        <section class="main-header">
+          <img
+            class="logo"
+            src="/images/main-logo-120x60.png"
+            alt="flower place"
+          />
+          <nav class="navigation">
+            <a class="navigation-item" href="/">Наши магазины</a>
+            <a class="navigation-item" href="#delivery">Доставка и оплата</a>
+          </nav>
+          <div class="right-group">
+            <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+            <div class="media-icons">
+              <a
+                class="icon"
+                href="https://wa.me//994557088909"
+                target="_blank"
+              >
+                <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+              </a>
+              <a class="icon" href="https://t.me/muradhajiev" target="_blank">
+                <img src="/images/telegram-icon.svg" alt="telegram" />
+              </a>
+            </div>
+            <div class="ver-divider"></div>
+            <div class="profile">
+              <img class="icon" src="/images/heart.svg" alt="favorites" />
+              <img
+                class="icon"
+                src="/images/shopping-basket.svg"
+                alt="shopping basket"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Mobile header -->
+      <section class="mobile-header">
+        <img
+          onclick="openMenu()"
+          class="menu-toggle-btn"
+          src="/images/menu-toggle-icon.svg"
+          alt="menu"
+        />
+        <img
+          class="logo"
+          src="/images/main-logo-120x60.png"
+          alt="flower logo"
+        />
+        <div class="menu-toggle-btn"></div>
+      </section>
+      <!-- Mobile menu -->
+      <section id="mobile-menu" class="mobile-menu">
+        <div id="mobile-menu-inner" class="inner">
+          <div class="heading">
+            <img
+              onclick="closeMenu()"
+              class="close"
+              src="/images/menu-close-button.svg"
+              alt="close menu"
+            />
+            <img class="search" src="/images/search.svg" alt="close menu" />
+          </div>
+          <div class="menu">
+            <a class="menu-item" href="/" onclick="closeMenu()"
+              >Наши магазины</a
+            >
+            <a class="menu-item" href="#delivery" onclick="closeMenu()"
+              >Доставка и оплата</a
+            >
+          </div>
+          <div class="footer">
+            <div class="number-media">
+              <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+              <div class="media-icons">
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+                </a>
+                <a class="icon" href="https://t.me/muradhajiev" target="_blank">
+                  <img src="/images/telegram-icon.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+            <div class="text">
+              <p class="text1">
+                Бесплатная доставка по Москве для всех заказов от 2000 RUB
+              </p>
+              <p class="text2">Oтслеживание вашего заказа</p>
+            </div>
+            <div class="visa-container">
+              <img
+                class="visa-logo"
+                src="/images/visa-logo.svg"
+                alt="visa logo"
+              />
+              <img
+                class="visa-text"
+                src="/images/visa-text.svg"
+                alt="visa logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Delivery and Payment -->
+      <section id="delivery" class="delivery-payment">
+        <div class="inner">
+          <h1>Доставка и оплата</h1>
+          <p>Заказы принимаются круглые сутки</p>
+        </div>
+      </section>
+      <!-- Deliver options -->
+      <section class="deliver-options">
+        <div class="inner">
+          <h2>Варианты доставки</h2>
+          <div class="options">
+            <div class="option-column">
+              <h3>Курьер до двери</h3>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>
+                  Доставка по Москве осуществляется бесплатно в пределах МКАД.
+                </p>
+              </div>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>Доставка за пределами МКАД оплачивается отдельно.</p>
+              </div>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>Перед отправкой вам будет выслано фото на согласование.</p>
+              </div>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>Есть возможность бесконтактной доставки</p>
+              </div>
+            </div>
+            <div class="option-column">
+              <h3>Самовызов</h3>
+              <div class="option">
+                <div class="list-dot"></div>
+                <div class="multi-option">
+                  <p>г. Москва, Можайское шоссе, д. 41,к.1.</p>
+                  <p>г. Москва, м. Фили, Новозаводская улица, д. 2, к.1.</p>
+                  <p>г. Москва, ул. Новый Арбат, 3, стр. 1,</p>
+                </div>
+              </div>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>Для выдачи заказа Вам нужно приехать в магазин</p>
+              </div>
+              <div class="option">
+                <div class="list-dot"></div>
+                <p>Назвать свою ФИО и номер заказа</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Payment options -->
+      <div class="payment-options">
+        <div class="inner">
+          <h2>Возможности оплаты</h2>
+          <div class="options">
+            <div class="option">
+              <img
+                src="images/google-pay.svg"
+                alt="google pay"
+                class="google"
+              />
+              <p>Google Pay</p>
+            </div>
+            <div class="option">
+              <img src="images/apple-pay.svg" alt="apple pay" class="apple" />
+              <p>Apple Pay</p>
+            </div>
+            <div class="option">
+              <img src="images/mobile-pay.svg" alt="mobile pay" class="logo" />
+              <p>Оплата онлайн</p>
+            </div>
+            <div class="option">
+              <img src="images/debit-pay.svg" alt="debit pay" class="logo" />
+              <p>Оплата картой</p>
+            </div>
+            <div class="option">
+              <img src="images/cash-pay.svg" alt="cash pay" class="logo" />
+              <p>Оплата наличными</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <section class="footer">
+        <div class="main-footer">
+          <div class="stores">
+            <div class="header">Магазины</div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">ул. Новый Арбат, 3, стр. 1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">Можайское шоссе, д.41, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">м.Фили. Новозаводская улица, д.2, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+            <div class="hor-divider"></div>
+            <div class="icons">
+              <a
+                class="icon"
+                href="https://wa.me//994557088909"
+                target="_blank"
+              >
+                <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+              </a>
+              <a
+                class="icon"
+                href="https://wa.me//994557088909"
+                target="_blank"
+              >
+                <img src="/images/telegram-icon.svg" alt="telegram" />
+              </a>
+              <a
+                class="icon"
+                href="https://wa.me//994557088909"
+                target="_blank"
+              >
+                <img src="/images/instagram-icon.svg" alt="instagram" />
+              </a>
+              <a
+                class="icon"
+                href="https://wa.me//994557088909"
+                target="_blank"
+              >
+                <img src="/images/vcontact-icon.svg" alt="vcontact" />
+              </a>
+            </div>
+          </div>
+          <div class="logo-holder">
+            <img
+              class="logo"
+              src="/images/main-logo-220x110.png"
+              alt="Flower place"
+            />
+            <div class="text">
+              © 2021 Все права защищены <br />
+              «Flowers place»
+            </div>
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="bottom-footer">
+          <div class="text">karamin__</div>
+          <div class="text">2021</div>
+        </div>
+      </section>
+      <!-- Mobile footer -->
+      <section class="mobile-footer">
+        <div class="main-footer">
+          <div class="stores">
+            <div class="header">Магазины</div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">ул. Новый Арбат, 3, стр. 1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">Можайское шоссе, д.41, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+            <div class="store">
+              <div class="logo">
+                <img src="images/location.svg" alt="location" />
+              </div>
+              <div class="location">
+                <div class="address">м.Фили. Новозаводская улица, д.2, к.1</div>
+                <div class="number">+7(999) 999-03-97</div>
+              </div>
+            </div>
+          </div>
+          <div class="media-visa">
+            <div class="media">
+              <a class="number" href="tel:+8 000 777 0016">8 (000) 777 0016</a>
+              <div class="hor-divider"></div>
+              <div class="icons">
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/whatsapp-icon.svg" alt="whatsapp" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/telegram-icon.svg" alt="telegram" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/instagram-icon.svg" alt="instagram" />
+                </a>
+                <a
+                  class="icon"
+                  href="https://wa.me//994557088909"
+                  target="_blank"
+                >
+                  <img src="/images/vcontact-icon.svg" alt="vcontact" />
+                </a>
+              </div>
+            </div>
+            <div class="visa-container">
+              <img
+                class="visa-logo"
+                src="/images/visa-logo.svg"
+                alt="visa logo"
+              />
+              <img
+                class="visa-text"
+                src="/images/visa-text.svg"
+                alt="visa logo"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="logo-holder">
+          <img
+            class="logo"
+            src="/images/main-logo-120x60.png"
+            alt="Flower place"
+          />
+          <div class="text">
+            © 2021 Все права защищены <br />
+            «Flowers place»
+          </div>
+        </div>
+        <div class="hor-divider"></div>
+        <div class="bottom-footer">
+          <div class="text">karamin__</div>
+          <div class="text">2021</div>
+        </div>
+      </section>
+    </section>
+    <!-- Bootstarp 5 CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Toastify CDN -->
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script> -->
+    <!-- Splide CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
+    <!-- Store functions -->
+    <script src="/js/utils.js"></script>
+  </body>
+</html>

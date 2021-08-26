@@ -1,0 +1,98 @@
+.deliver-options {
+  padding: 30px 150px;
+  background-color: var(--white);
+  font-family: "Roboto Medium";
+}
+
+.deliver-options > .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.deliver-options > .inner > h2 {
+  font-size: 20px;
+}
+
+.deliver-options > .inner > .options {
+  display: flex;
+}
+
+.deliver-options > .inner > .options > .option-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deliver-options > .inner > .options > .option-column > h3 {
+  font-size: 16px;
+}
+
+.deliver-options > .inner > .options > .option-column > .option {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.deliver-options
+  > .inner
+  > .options
+  > .option-column
+  > .option
+  > .multi-option {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.deliver-options > .inner > .options > .option-column > .option > .list-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.deliver-options
+  > .inner
+  > .options
+  > .option-column
+  > .option
+  > .list-dot
+  > .multi-option
+  > p {
+  font-family: "Roboto Regular";
+  font-size: 12px;
+}
+
+.deliver-options > .inner > .options > .option-column > .option > p {
+  font-size: 12px;
+}
+
+@media all and (max-width: 425px) {
+  .deliver-options {
+    padding: 20px 15px;
+  }
+
+  .deliver-options > .inner {
+    gap: 15px;
+  }
+
+  .deliver-options > .inner > h2 {
+    font-size: 16px;
+  }
+
+  .deliver-options > .inner > .options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .deliver-options > .inner > .options > .option-column {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .deliver-options > .inner > .options > .option-column > h3 {
+    font-size: 14px;
+  }
+}
