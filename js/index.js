@@ -1,7 +1,7 @@
 // const API_URL = "http://192.168.0.144:5555/api/";
 // const API_URL = "http://comingsoon.pythonanywhere.com/api/";
 // const API_URL = "https://comingsoon.pythonanywhere.com/api/";
-const API_URL = "http://157.90.29.1:8006/api/";
+const API_URL = "https://157.90.29.1:8006/api/";
 
 const splideProps = {
   type: "loop",
