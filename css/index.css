@@ -54,3 +54,8 @@ body {
 .toast-type-danger {
   background: var(--toast-danger);
 }
+
+.form-error {
+  border: 2px solid red !important;
+  color: red;
+}

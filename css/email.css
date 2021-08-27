@@ -38,23 +38,51 @@
 
 .main > .email > .image-holder > .overlay > .email-form > .form {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 8px;
 }
 
-.main > .email > .image-holder > .overlay > .email-form > .form > input {
+.main > .email > .image-holder > .overlay > .email-form > .form > .form-group {
+}
+
+.main
+  > .email
+  > .image-holder
+  > .overlay
+  > .email-form
+  > .form
+  > .form-group
+  > input {
   width: auto;
   font-size: 14px;
-  outline: white;
+  outline: var(--white);
   border: none;
   height: 40px;
   width: 320px;
 }
 
-.main > .email > .image-holder > .overlay > .email-form > .form > input:focus {
+.main
+  > .email
+  > .image-holder
+  > .overlay
+  > .email-form
+  > .form
+  > .form-group
+  > input:focus {
   box-shadow: none;
   border: none;
+}
+
+.main
+  > .email
+  > .image-holder
+  > .overlay
+  > .email-form
+  > .form
+  > .form-group
+  > p {
+  margin: 4px 0;
 }
 
 .main > .email > .image-holder > .overlay > .email-form > .form > button {
@@ -70,6 +98,25 @@
 .main > .email > .image-holder > .overlay > .email-form > .form > button:focus,
 button:active {
   box-shadow: none;
+}
+
+.main > .email > .image-holder > .overlay > #form1-success {
+  display: none;
+}
+
+.main > .email > .image-holder > .overlay > #form1-success > .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* .main > .email > .image-holder > .overlay > #form1-success > .inner > img {} */
+
+.main > .email > .image-holder > .overlay > #form1-success > .inner > p {
+  font-size: 16px;
 }
 
 @media all and (max-width: 480px) {

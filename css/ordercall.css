@@ -37,18 +37,25 @@
   gap: 10px;
 }
 
-.order-call > .holder > .number-form > input {
+.order-call > .holder > .number-form > .form-group {
+}
+
+.order-call > .holder > .number-form > .form-group input {
   width: auto;
   font-size: 14px;
-  outline: white;
+  outline: var(--white);
   border: none;
   height: 40px;
   width: 320px;
 }
 
-.order-call > .holder > .number-form > input:focus {
+.order-call > .holder > .number-form > .form-group input:focus {
   box-shadow: none;
   border: none;
+}
+
+.order-call > .holder > .number-form > .form-group p {
+  margin: 4px 0;
 }
 
 .order-call > .holder > .number-form > button {
@@ -62,6 +69,26 @@
 .order-call > .holder > .number-form > button:focus,
 button:active {
   box-shadow: none;
+}
+
+.order-call > .holder > #form2-success {
+  height: 90px;
+  display: none;
+}
+
+.order-call > .holder > #form2-success > .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* .order-call > .holder > #form2-success > .inner > img {} */
+
+.order-call > .holder > #form2-success > .inner > p {
+  font-size: 16px;
 }
 
 @media all and (max-width: 480px) {

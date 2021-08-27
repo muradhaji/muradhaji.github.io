@@ -86,6 +86,46 @@ const isNumber = (text) => {
   return numberFormat.test(text);
 };
 
+const form1SuccessNotification = (open) => {
+  if (open) {
+    $("#form1").fadeOut(0);
+    $("#form1-success").fadeIn(1000);
+  } else {
+    $("#form1-success").fadeOut(0);
+    $("#form1").fadeIn(1000);
+  }
+};
+
+const form1ErrorNotification = (text) => {
+  $("#subscriptionform input").addClass("form-error");
+  $("#form1-error-message").text(text);
+};
+
+$("#subscriptionform input").on("keypress change", () => {
+  $("#subscriptionform input").removeClass("form-error");
+  $("#form1-error-message").text("");
+});
+
+const form2SuccessNotification = (open) => {
+  if (open) {
+    $("#orderform").fadeOut(0);
+    $("#form2-success").fadeIn(1000);
+  } else {
+    $("#form2-success").fadeOut(0);
+    $("#orderform").fadeIn(1000);
+  }
+};
+
+const form2ErrorNotification = (text) => {
+  $("#orderform input").addClass("form-error");
+  $("#form2-error-message").text(text);
+};
+
+$("#orderform input").on("keypress change", () => {
+  $("#orderform input").removeClass("form-error");
+  $("#form2-error-message").text("");
+});
+
 const subscriptionForm = document.getElementById("subscriptionform");
 subscriptionForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -95,6 +135,9 @@ subscriptionForm.addEventListener("submit", (event) => {
     Object.assign(data, { subMail: text });
   } else if (isNumber(text)) {
     Object.assign(data, { subNumber: text });
+  } else {
+    form1ErrorNotification("Please provide valid data!");
+    return;
   }
   fetch(`${API_URL}`, {
     method: "post",
@@ -105,17 +148,14 @@ subscriptionForm.addEventListener("submit", (event) => {
     body: JSON.stringify(data),
   })
     .then((res) => {
-      if (res.ok) {
-        console.log(res);
-        showNotification("success", "You have subscribed successfully!");
-        event.target.numberormail.value = "";
-      } else {
-        showNotification("warning", "You have already subscribed!");
-      }
+      form1SuccessNotification(true);
+      event.target.numberormail.value = "";
+      setTimeout(() => {
+        form1SuccessNotification(false);
+      }, 3000);
     })
     .catch((error) => {
-      console.log(error);
-      showNotification("danger", "Someting went wrong!");
+      form1ErrorNotification("Something went wrong!");
     });
 });
 
@@ -134,14 +174,17 @@ orderForm.addEventListener("submit", (event) => {
       body: JSON.stringify({ subnNumber: number }),
     })
       .then((res) => {
-        console.log(res);
-        showNotification("success", "Call ordered successfully!");
+        form2SuccessNotification(true);
         event.target.number.value = "";
+        setTimeout(() => {
+          form2SuccessNotification(false);
+        }, 3000);
       })
       .catch((error) => {
-        console.log(error);
-        showNotification("danger", "Someting went wrong!");
+        form2ErrorNotification("Something went wrong");
       });
+  } else {
+    form2ErrorNotification("Please provide valid number!");
   }
 });
 
