@@ -35,7 +35,10 @@
 
 /* .main > .mobile-footer > .main-footer > .stores > .store > .location > .address {} */
 
-/* .main > .mobile-footer > .main-footer > .stores > .store > .location > .number {} */
+.main > .mobile-footer > .main-footer > .stores > .store > .location > .number {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
 .main > .mobile-footer > .main-footer > .media-visa {
   display: flex;
